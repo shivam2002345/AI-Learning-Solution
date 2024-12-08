@@ -1,0 +1,11 @@
+General Page Styling
+.aboutUs-page {
+    background-image: url("../assets/custom.jpg"); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Makes the image fixed during scroll */
+    padding: 50px 0;
+    background-color: blueviolet;
+  }
+  
+  

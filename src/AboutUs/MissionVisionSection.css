@@ -1,0 +1,57 @@
+.vision-mission-section {
+    position: relative;
+    width: 1500px;
+    height: 300px; /* Full viewport height */
+    text-align: center;
+    margin-left: 5.3rem;
+    margin-top: 10rem;
+  }
+  
+  .vision-mission-image {
+    width: 100%;
+    height: 350px;
+    background-image: url("../assets/vision.jpg"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+  }
+  
+  .vision-mission-overlay {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent dark overlay */
+    color: white;
+    width: 30%; /* Adjust this to make the overlay rectangle smaller or larger */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-right: 60rem;
+  }
+  
+  .vision-mission-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .vision-mission-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .vision-mission-overlay {
+      width: 80%; /* Makes the overlay take more space on small screens */
+      padding: 20px;
+    }
+  
+    .vision-mission-overlay h1 {
+      font-size: 2rem;
+    }
+  
+    .vision-mission-overlay p {
+      font-size: 1rem;
+    }
+  }
+  

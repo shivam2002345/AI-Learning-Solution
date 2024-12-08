@@ -1,0 +1,70 @@
+.founder-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #e8e2fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10rem;
+  }
+  
+  .founder-image {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .founder-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .founder-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .founder-text {
+    text-align: left;
+  }
+  
+  .founder-heading {
+    font-size: 2rem;
+    color: #1d3557;
+    margin-bottom: 10px;
+  }
+  
+  .founder-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+  }
+  
+  .badges-section {
+    text-align: left;
+  }
+  
+  .badges-heading {
+    font-size: 1.5rem;
+    color: #1d3557;
+    margin-bottom: 15px;
+  }
+  
+  .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+  }
+  
+  .badges-grid img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

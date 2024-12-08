@@ -1,0 +1,108 @@
+.webinars-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.webinars-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px; /* Added more space below the heading */
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #333;
+}
+
+.webinars-carousel {
+  overflow: hidden; /* Hide the extra webinars */
+  width: 100%;
+}
+
+.webinars-grid {
+  display: flex;
+  gap: 30px; /* Increased spacing between cards */
+  justify-content: center;
+  transition: transform 1s ease-in-out;
+}
+
+.webinar-card {
+  flex: 0 0 calc(33.33% - 30px); /* Each card takes 1/3 of the container with gap */
+  max-width: 320px; /* Increased max-width slightly */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.webinar-card:hover {
+  transform: translateY(-8px);
+}
+
+.image-container {
+  width: 100%;
+  height: 300px; /* Increased the height of the image */
+  overflow: hidden;
+}
+
+.webinar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webinar-details {
+  padding: 15px; /* Increased padding for better spacing */
+  text-align: center;
+  background-color: #171717; /* Title and description background color */
+  color: white;
+}
+
+.webinar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffdd00; /* Added a more vibrant color for the title */
+}
+
+.webinar-description {
+  font-size: 0.9rem; /* Reduced font size slightly */
+  line-height: 1.4;
+  color: #d9e6f2;
+  margin-bottom: 12px;
+  max-height: 60px; /* Limited the height of the description to maintain balance */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.register-button {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register-button:hover {
+  background-color: #226a01;
+}
+
+.explore-button {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: white;
+  background-color: #6a5acd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  background-color: #4d40a4;
+}

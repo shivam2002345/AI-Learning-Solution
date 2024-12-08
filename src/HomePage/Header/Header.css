@@ -1,0 +1,75 @@
+/* General styling for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #171717; /* Black background */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Styling for navigation links */
+  .navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links ul li {
+    margin: 0 80px; /* Add spacing between navigation links */
+    position: relative;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease, font-weight 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    font-weight: bold;          /* Make text bold on hover */
+    transform: scale(1.1);      /* Slightly increase the size without affecting layout */
+    color: white;               /* Keep the text color white */
+  }
+  
+  /* Dropdown menu */
+  .navbar-links .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  .navbar-links .dropdown-menu li {
+    margin: 0;
+    padding: 5px 20px;
+  }
+  
+  .navbar-links .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .navbar-links .dropdown-menu a:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+    color: #00c8ff;
+  }
+  

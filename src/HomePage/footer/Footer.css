@@ -1,0 +1,168 @@
+/* Footer Styles */
+.footer {
+  background: linear-gradient(145deg, #1c1c1c, #282828); /* Modern gradient */
+  color: white;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo .logo {
+  height: 70px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo .logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-logo .company-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+  transition: transform 0.5s ease;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.social-icons h4 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-links h4::after,
+.footer-contact h4::after,
+.social-icons h4::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  margin-top: 5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+  padding-left: 5px;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 15px;
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #e74c3c;
+  transform: scale(1.2);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  opacity: 0;
+  animation: fadeInBottom 2s ease forwards;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    padding: 20px 0;
+    transform: translateY(0); /* No animation delay */
+  }
+}

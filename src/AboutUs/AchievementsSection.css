@@ -1,0 +1,34 @@
+.achievements-section {
+    text-align: center;
+    padding: 20px;
+    background: #fefae0;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .achievements-heading {
+    font-size: 2rem;
+    color: #6a0572;
+    margin-bottom: 15px;
+  }
+  
+  .achievements-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .achievements-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .achievements-grid img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

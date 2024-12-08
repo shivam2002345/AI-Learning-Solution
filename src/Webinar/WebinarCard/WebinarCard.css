@@ -1,0 +1,204 @@
+/* General styling for the webinar section */
+.webinar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Increased gap between cards */
+    padding: 20px;
+  }
+  
+  /* Styling each webinar card */
+  .webinar-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; /* Adjust width for smaller cards */
+    max-width: 1000px; /* Limit the maximum width */
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for zoom and shadow */
+    margin-bottom: 20px; /* Additional margin between cards */
+  }
+  
+  /* Hover effect for the webinar card */
+  .webinar-card:hover {
+    transform: scale(1.07); /* Zoom in the card */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a deeper shadow for hover */
+  }
+  
+  /* Default layout: Image on the right */
+  .webinar-card-normal {
+    flex-direction: row;
+  }
+  
+  /* Reversed layout: Image on the left */
+  .webinar-card-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Styling for the left and right side */
+  .webinar-side {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .webinar-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  .webinar-details h3 {
+    font-size: 1.2rem;
+    color: #000;
+    margin: 5px 0;
+  }
+  
+  .webinar-details p {
+    font-size: 0.9rem;
+    color: #0a0000;
+    margin: 2px 0;
+  }
+  
+  /* Content area styling */
+  .webinar-center {
+    flex: 2;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .webinar-center h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .webinar-center p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Status button (UPCOMING) styling */
+  .status {
+    background-color: #ff4444;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Register button styling */
+  .register-btn {
+    background-color: #00c853;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  /* Styling the image */
+  .webinar-image img {
+    width: 150px; /* Adjust image size */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Adjust for responsive design */
+  @media (max-width: 768px) {
+    .webinar-card {
+      flex-direction: column;
+    }
+  
+    .webinar-card-reverse {
+      flex-direction: column;
+    }
+  
+    .webinar-side {
+      text-align: center;
+    }
+  
+    .webinar-center {
+      padding: 10px 0;
+    }
+  }
+  /* Styling for the h1 heading with 3D effect */
+  .webinar-section h1 {
+    font-size: 3rem; /* Prominent size */
+    font-weight: bold;
+    text-transform: uppercase; /* Ensures emphasis */
+    letter-spacing: 2px; /* Spaced-out letters */
+    text-align: center; /* Centers the heading */
+    position: relative;
+    color: #2c3e50; /* Deep gray-blue for professional tone */
+    text-shadow: 
+      2px 2px 0px #95a5a6, /* Soft gray */
+      4px 4px 0px #bdc3c7, /* Light silver */
+      6px 6px 0px #ecf0f1; /* Subtle off-white */
+    animation: depth-shift 4s infinite ease-in-out; /* Adds a continuous 3D movement effect */
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    perspective: 1000px; /* Sets perspective depth */
+  }
+  
+  /* Adding the underline with a 3D effect */
+  .webinar-section h1::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #2c3e50, #95a5a6, #ecf0f1);
+    transform: scaleX(0.5) translateZ(-20px); /* Adds depth and scaling */
+    animation: underline-pulse 4s infinite ease-in-out; /* Adds a dynamic pulse */
+    transform-origin: center;
+  }
+  
+  /* Keyframe animation for 3D depth effect */
+  @keyframes depth-shift {
+    0%, 100% {
+      transform: translateZ(0px) rotateX(0deg) rotateY(0deg);
+      text-shadow: 
+        2px 2px 0px #95a5a6,
+        4px 4px 0px #bdc3c7,
+        6px 6px 0px #ecf0f1;
+    }
+    50% {
+      transform: translateZ(30px) rotateX(15deg) rotateY(-15deg);
+      text-shadow: 
+        3px 3px 0px #95a5a6,
+        6px 6px 0px #bdc3c7,
+        9px 9px 0px #ecf0f1;
+    }
+  }
+  
+  /* Keyframe animation for underline pulse */
+  @keyframes underline-pulse {
+    0%, 100% {
+      transform: scaleX(0.5) translateZ(-20px);
+      opacity: 1;
+    }
+    50% {
+      transform: scaleX(1) translateZ(-30px);
+      opacity: 0.8;
+    }
+  }

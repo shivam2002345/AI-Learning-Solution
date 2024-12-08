@@ -1,0 +1,97 @@
+.homeabout-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c1c; /* Dark background color */
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+    margin: 110px auto; /* Increase margin for more gap from the previous section */
+    max-width: 1200px;
+  }
+  
+  .about-content {
+    max-width: 55%; /* Adjusted to make space for the image */
+  }
+  
+  .homeabout-heading {
+    font-size: 34px; /* Make the heading bigger */
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -10px; /* Shift heading slightly upward */
+    text-align: center;
+  }
+  
+  .about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .about-button {
+    padding: 10px 20px;
+    background-color: #6a5acd; /* Lavender button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .about-button:hover {
+    background-color: #483d8b; /* Darker lavender on hover */
+  }
+  
+  .homeabout-image {
+    position: relative; /* Required for positioning the light rays */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50px; /* Shift the image closer to the text */
+  }
+  
+  .homeabout-image img {
+    width: 220px; /* Adjust image size */
+    height: auto;
+    z-index: 2; /* Ensure the robot stays above the light rays */
+  }
+  
+ /* Light rays effect */
+.light-rays {
+    position: absolute;
+    top: calc(20% - 80px); /* Move rays 10px upward */
+    left: calc(45% - 130px); /* Move rays 13px to the left */
+    width: 180px; /* Adjust size of the light rays */
+    height: 180px;
+    background: radial-gradient(
+      rgba(255, 223, 0, 0.5) 20%,
+      rgba(255, 223, 0, 0.1) 70%,
+      transparent 100%
+    ); /* Yellow light gradient */
+    border-radius: 50%;
+    z-index: 1; /* Place above the robot image */
+    animation: pulse 2s infinite; /* Create a pulsing light effect */
+    pointer-events: none; /* Prevent interaction issues */
+  }
+  
+  /* Pulsing animation for the light */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+  
+  
